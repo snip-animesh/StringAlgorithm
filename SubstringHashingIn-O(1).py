@@ -9,7 +9,7 @@ def hash(s):
 
 s=input()
 mod=1000000007
-print(res,inv)
+res,inv=hash(s)
 while True:
     l,r=map(int,input().split())
     print(((res[r]-res[l-1])*inv[l-1])%mod)
