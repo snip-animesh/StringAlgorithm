@@ -19,4 +19,14 @@ def zlag(pattern):
                 right-=1
     return z
   
-  #Just the z array is completed . full program isn't completed yet
+string=input('enter string ')
+pattern=input('pattern ')
+combined=pattern+'$'+string
+z=zlag(combined)
+for i in range(len(z)):
+    if z[i]==len(pattern):
+        print(i-len(pattern)-1)
+
+      
+#https://www.youtube.com/watch?v=CpZh4eF8QBw&t=846s
+#Logic from this video
